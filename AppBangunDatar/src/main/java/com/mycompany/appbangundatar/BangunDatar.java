@@ -8,6 +8,22 @@ package com.mycompany.appbangundatar;
  *
  * @author user
  */
-public class BangunDatar {
+abstract class BangunDatar {
+    private String namaBangunDatar;
+
+    public BangunDatar(String namaBangunDatar) {
+        this.namaBangunDatar = namaBangunDatar;
+    }
+
+    public String getNamaBangunDatar() {
+        return namaBangunDatar;
+    }
+
+    public void setNamaBangunDatar(String namaBangunDatar) {
+        this.namaBangunDatar = namaBangunDatar;
+    }
+    
+    abstract double luas();
+    abstract double keliling();
     
 }
